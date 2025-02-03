@@ -4,113 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sito per Collezionisti di Mazzi di Carte</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-
-        header {
-            background-color: #4a4a4a;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-        }
-
-        header .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #d291ff;
-        }
-
-        nav {
-            display: flex;
-            gap: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: white;
-            font-size: 16px;
-            padding: 5px 10px;
-        }
-
-        nav a:hover {
-            background-color: #d291ff;
-            border-radius: 5px;
-        }
-
-        .search {
-            background-color: #d291ff;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .search input {
-            border: none;
-            background-color: #d291ff;
-            color: white;
-            outline: none;
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 20px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .text-section {
-            max-width: 60%;
-        }
-
-        .text-section h1 {
-            font-size: 24px;
-            color: #4a4a4a;
-        }
-
-        .text-section p {
-            font-size: 18px;
-            color: #333;
-            line-height: 1.5;
-        }
-
-        .image-section {
-            text-align: center;
-        }
-
-        .image-section img {
-            width: 200px;
-            border-radius: 10px;
-        }
-
-        .image-section .caption {
-            margin-top: 10px;
-            font-size: 16px;
-            font-weight: bold;
-            color: #fff;
-            background-color: #d291ff;
-            padding: 5px;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="homepage">
     <header>
+       
         <div class="logo">&#9824;</div>
         <nav>
+            <a href="login.html">Login</a>
             <a href="#">Home</a>
             <a href="#">Catalogo</a>
             <a href="#">Nuove aggiunte</a>
@@ -120,6 +22,7 @@
             <input type="text" placeholder="Ricerca">
             <span>&#128269;</span>
         </div>
+    
     </header>
 
     <main>
@@ -137,5 +40,6 @@
             </div>
         </div>
     </main>
+</div>
 </body>
 </html>
