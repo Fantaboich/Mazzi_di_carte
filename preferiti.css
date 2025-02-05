@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(18, 18, 18);
+  color: #e5e5e5;
+  line-height: 1.6;
+}
+
+
+.cta-button, 
+.join-button, 
+.contact-form button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-top: 30px; 
+}
+
+button:hover, 
+.cta-button:hover, 
+.join-button:hover, 
+.contact-form button:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #9B2283;
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* HERO SECTION  */
+.hero-content {
+  position: relative;
+  background-color: #E5E5E5 ;
+  background-size: cover;
+ 
+  padding: 100px 20px 50px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-top: 60px;
+  min-height: 636px;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #9B2283;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-align: center; 
+  margin-top: 85px;
+}
+
+.hero-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  margin: 10px 0;
+  text-align: center; 
+  margin-top: 10px;
+}
+
+.hero-content p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  width: 30%; 
+  margin: 20px auto;
+}
+.hero-content hr.prova {
+  width: 60%;  
+  margin: 20px auto;  
+  border: none;  
+  height: 2px;  
+  background-color: #bb85b0;  
+}
+/* MAIN CONTENT */
+
+.main-content {
+  padding: 5rem 2rem;
+  margin-top: 0px;
+  text-align: center;
+  background-color: rgb(18, 18, 18);
+}
+
+.h2 {
+  color: #9B2283;
+  margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* CARD  */
+
+.container-card{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.cardImage{
+  height: 250px;
+  width: 290px;
+  border: white;
+}
+
+.card {
+  background-color: #333;
+  border-radius: 8px;
+  height: 340px;
+  width: 290px;
+  overflow: hidden;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #9B2283;
+}
+
+.card-info {
+  padding: 1rem;
+  text-align: left;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+.card-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #9B2283;
+}
+
+.card-info p {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+/* ABOUT US*/
+
+.about-us#about-us{
+  scroll-margin: 100px;
+}
+.about-us {
+  background: linear-gradient(135deg, #9B2283, #c54aad);
+  color: white;
+  text-align: center;
+  padding: 6rem 3rem;
+  margin-top: 0px;
+}
+
+.about-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.about-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3rem;
+  max-width: 900px;
+  line-height: 1.7;
+  margin: 1.5rem auto;
+  background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 3rem;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  button, 
+  .cta-button, 
+  .join-button, 
+  .contact-form button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+  
+  body {
+    font-family: 'Playfair Display', serif; 
+    background-color: #eaeaea;
+    padding-top: 5px; 
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgb(90, 88, 88);
+    border-bottom: 2px solid rgb(119, 48, 129);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 66px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-logo {
+    height: 50px;
+    width: 50px;
+  }
+  
+  /* Contenitore per il logo e i bottoni centrali */
+  .navbar-left {
+    display: flex;
+    gap: 50px;
+    flex-grow: 1;  
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px; 
+    transition: color 0.3s;
+    font-family: 'Playfair Display', serif;
+    padding: 20px;
+  }
+  
+  .nav-links li a:hover {
+    color: #f51ff5;
+  }
+  
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background: #333;
+    border-radius: 25px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    width: 100%;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 8px;
+    background: transparent;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .search-bar input::placeholder {
+    color: #bbb;
+  }
+  
+  .search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .search-bar button:hover {
+    transform: scale(1.1);
+  }
+  
+  .search-bar button svg {
+    stroke: #9B2283;  
+  }
+  
+  /* Pulsante Registrati */
+  .register-button {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 25px;
+    background-color: #9B2283;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+  }
+  
+  .register-button:hover {
+    background-color: #f51ff5;
+  }
