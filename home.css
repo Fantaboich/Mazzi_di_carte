@@ -1,0 +1,217 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(18, 18, 18);
+  color: #e5e5e5;
+  line-height: 1.6;
+}
+
+
+.cta-button, 
+.join-button, 
+.contact-form button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-top: 30px; 
+}
+
+button:hover, 
+.cta-button:hover, 
+.join-button:hover, 
+.contact-form button:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #9B2283;
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* HERO SECTION  */
+.hero-content {
+  position: relative;
+  background: url('sfondo_home.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 100px 20px 50px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-top: 60px;
+  min-height: 636px;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #9B2283;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-align: center; 
+  margin-top: 85px;
+}
+
+.hero-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  margin: 10px 0;
+  text-align: center; 
+  margin-top: 10px;
+}
+
+.hero-content p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  width: 30%; 
+  margin: 20px auto;
+}
+.hero-content hr.prova {
+  width: 60%;  
+  margin: 20px auto;  
+  border: none;  
+  height: 2px;  
+  background-color: #bb85b0;  
+}
+/* MAIN CONTENT */
+
+.main-content {
+  padding: 5rem 2rem;
+  margin-top: 0px;
+  text-align: center;
+  background-color: rgb(18, 18, 18);
+}
+
+.h2 {
+  color: #9B2283;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* CARD  */
+
+.container-card{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.cardImage{
+  height: 340px;
+  width: 290px;
+}
+
+.card {
+  background-color: #333;
+  border-radius: 8px;
+  height: 340px;
+  width: 290px;
+  overflow: hidden;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #9B2283;
+}
+
+.card-info {
+  padding: 1rem;
+  text-align: left;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+.card-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #9B2283;
+}
+
+.card-info p {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+/* ABOUT US*/
+
+.about-us#about-us{
+  scroll-margin: 100px;
+}
+.about-us {
+  background: linear-gradient(135deg, #9B2283, #c54aad);
+  color: white;
+  text-align: center;
+  padding: 6rem 3rem;
+  margin-top: 0px;
+}
+
+.about-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.about-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3rem;
+  max-width: 900px;
+  line-height: 1.7;
+  margin: 1.5rem auto;
+}
+
+
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 3rem;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  button, 
+  .cta-button, 
+  .join-button, 
+  .contact-form button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}

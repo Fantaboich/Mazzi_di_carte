@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif; 
+  background-color: #eaeaea;
+  padding-top: 5px; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  padding: 0 20px;
+  background-color: rgb(90, 88, 88);
+  border-bottom: 2px solid rgb(119, 48, 129);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 66px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.image-logo {
+  height: 50px;
+  width: 50px;
+}
+
+/* Contenitore per il logo e i bottoni centrali */
+.navbar-left {
+  display: flex;
+  gap: 50px;
+  flex-grow: 1;  
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  padding: 10px;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px; 
+  transition: color 0.3s;
+  font-family: 'Playfair Display', serif;
+  padding: 20px;
+}
+
+.nav-links li a:hover {
+  color: #f51ff5;
+}
+
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #333;
+  border-radius: 25px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  width: 100%;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 8px;
+  background: transparent;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+}
+
+.search-bar input::placeholder {
+  color: #bbb;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.search-bar button:hover {
+  transform: scale(1.1);
+}
+
+.search-bar button svg {
+  stroke: #9B2283;  
+}
+
+/* Pulsante Registrati */
+.register-button {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 25px;
+  background-color: #9B2283;
+  transition: background-color 0.3s ease;
+  margin-left: 20px;
+}
+
+.register-button:hover {
+  background-color: #f51ff5;
+}

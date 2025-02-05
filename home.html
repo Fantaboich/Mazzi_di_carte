@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!-- Metadati -->
+    <meta charset="UTF-8"> <!-- Imposta la codifica dei caratteri a UTF-8 per supportare caratteri speciali -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rende la pagina responsiva sui dispositivi mobili -->
+    <title>House of Cards</title> 
+    <!-- Collegamento ai file CSS -->
+    <link rel="stylesheet" href="navbar.css"> 
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="logo.ico" type="image/x-icon"> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> 
+
+</head>
+<body class="slide-in"> 
+    <div class="page-wrapper"> 
+
+    <!-- Header con Navbar -->
+    <header>
+        <div class="navbar"> 
+            <div class="navbar-left"> 
+                <div class="logo">
+                    <img src="Logo.png" class="image-logo" alt="Logo"> <!-- Logo -->
+                </div>
+                <ul class="nav-links"> <!-- Lista dei link di navigazione -->
+                    <li><a href="home.html">Home</a></li> 
+                    <li><a href="#about-us">About Us</a></li> 
+                    <li><a href="catalogo.html">Catalogo</a></li> 
+                    <li><a href="scambio.html">Scambio</a></li> 
+                    <li><a href="#">Preferiti</a></li> 
+                </ul>
+            </div>
+            <div class="navbar-right"> 
+                <div class="search-bar"> <!-- Barra di ricerca -->
+                    <input type="text" placeholder="Cerca"> 
+                    <button> <!-- Pulsante per la ricerca -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line> 
+                        </svg>
+                    </button>
+                </div>
+                <a href="registrati.html" class="register-button">Registrati</a> 
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="hero-content"> 
+        <h1>Benvenuti su House of Cards!</h1> 
+        <hr class="prova"> 
+        <h2>Trova mazzi che ti interessano</h2> 
+        <a href="catalogo.html" class="cta-button">Esplora Catalogo</a> 
+    </div>
+
+    
+    <section class="main-content">
+        <h2 class="h2">Mazzi in Tendenza</h2>
+        <div class="container-card"> 
+            <a href="#">
+                <div class="card"> 
+                    <img src="carta1.jpg" class="cardImage"> 
+                </div>
+            </a>
+            <a href="#"> 
+                <div class="card"> 
+                    <img src="carta2.jpg" class="cardImage"> 
+                   
+                </div>
+            </a>
+            <a href="#"> 
+                <div class="card"> 
+                    <img src="carta3.jpg" class="cardImage"> 
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us" id="about-us">
+        <div class="about-container"> <!-- Contenitore per il testo -->
+            <h2 class="about-title">About us</h2> 
+            <p class="about-text"> <!-- Testo descrittivo sulla pagina -->
+                Siamo una community dedicata agli appassionati di mazzi di carte.
+                Qui puoi scoprire mazzi unici, gestire la tua collezione e scambiare carte con altri collezionisti. 
+                Unisciti a noi per vivere la passione del collezionismo!
+            </p>
+            <a href="registrati.html" class="join-button">Unisciti a noi!</a> 
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer"> 
+        <p>&copy; 2025 House of Cards.</p> 
+    </footer>
+    </div> 
+</body>
+</html>
